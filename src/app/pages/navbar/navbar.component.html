@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand brand" routerLink="/">Mohammad Saquib</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item"><a class="nav-link nav-item-link" routerLink="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-item-link" (click)="scrollTo('about')">About</a></li>
+        <li class="nav-item"><a class="nav-link nav-item-link" (click)="scrollTo('skills')">Skills</a></li>
+        <li class="nav-item"><a class="nav-link nav-item-link" (click)="scrollTo('projects')">Projects</a></li>
+        <li class="nav-item"><a class="nav-link nav-item-link" (click)="scrollTo('contact')">Contact</a></li>
+      </ul>
+    </div>
+
+    <span class="star-icon">&#9889;</span>
+  </div>
+</nav>
+<div>
+  <<router-outlet></router-outlet>
+</div>

@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Particles */
+#tsparticles-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#tsparticles-background canvas {
+  pointer-events: none;
+}
+
+/* Hero */
+#home {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+/* Sections below */
+section:not(#home) {
+  padding: 120px 20px;
+  background: #fff; /* or dark if you want continuity */
+}

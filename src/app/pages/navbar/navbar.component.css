@@ -1,0 +1,63 @@
+.custom-navbar {
+    width: 100%;
+    background: #121828;
+    padding: 19px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.brand {
+    color: #4da6ff;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.nav-center a {
+    color: #ddd;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+.nav-center a:hover {
+    color: #4da6ff;
+}
+
+.star {
+    color: gold;
+    font-size: 1.3rem;
+}
+.nav-item-link {
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #d7d7d7 !important;
+    letter-spacing: 0.4px;
+    transition: color 0.25s ease, transform 0.25s ease;
+    cursor: pointer;
+}
+
+.nav-item-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #4da6ff;
+    transition: width 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+.nav-item-link:hover {
+     color: #4da6ff !important;
+    transform: translateY(-2px);
+}
+.nav-item-link:hover::after {
+    width: 100%;
+}
