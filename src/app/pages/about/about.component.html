@@ -1,21 +1,60 @@
 <div class="container-fluid" id="about">
 <section class="section">
 <div class="row">
-<div class="col-4">
-<div class="border">
-sdfsf
+ <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Left Side - Profile Image -->
+                <div class="col-lg-4 text-center profile-column">
+                    <div class="profile-image-wrapper">
+                        <img src="../../../assets/profile.png" alt="Profile" class="profile-image">
+                    </div>
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Content -->
+                <div class="col-lg-8 content-column">
+                    <div class="content-wrapper">
+                        <h1 class="section-title">About Me</h1>
+                        
+                        <h2 class="subsection-title">Who I Am</h2>
+                        
+                        <p class="description">
+                            I'm a Software Engineer and .NET Developer focused on building scalable APIs and robust backends using C#, ASP.NET Core, and modern architectural patterns. I value clean code, performance, and secure, maintainable systems.
+                        </p>
+                        
+                        <p class="description">
+                            I enjoy collaborating in teams, applying research-driven problem solving, and continuously learning. Recently, I have optimized APIs with LINQ, middleware, Dependency Injection, and caching to deliver measurable impact.
+                        </p>
+                       <div class="social-links">
+  <ng-container *ngFor="let item of socialLinks">
+    
+    <!-- If link exists -->
+    <a *ngIf="item.link; else noLink"
+       [href]="item.link"
+       target="_blank"
+       class="social-link">
+
+      <i [class]="item.icon"></i>
+      <span>{{ item.text }}</span>
+    </a>
+
+    <!-- If link does NOT exist -->
+    <ng-template #noLink>
+      <span class="social-link">
+        <i [class]="item.icon"></i>
+        <span>{{ item.text }}</span>
+      </span>
+    </ng-template>
+
+  </ng-container>
 </div>
-</div>
-<div class="col-8">
-<div class="border">
-  <div class="d-flex justify-content-center">About Me</div>
-  <div>
-    I'm a Software Engineer and .NET Developer focused on building scalable APIs and robust backends using C#, ASP.NET Core, and modern architectural patterns. I value clean code, performance, and secure, maintainable systems.
-  </div>
-  <div>
-    I enjoy collaborating in teams, applying research-driven problem solving, and continuously learning. Recently, I have optimized APIs with LINQ, middleware, Dependency Injection, and caching to deliver measurable impact.
-  </div>
-</div>
+
+                    </div>
+                </div>
+            </div>
 </div>
 </div>
 </section>
