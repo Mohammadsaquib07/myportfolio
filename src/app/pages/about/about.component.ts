@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   public isLoggedIn:boolean = true
+  public name:string = ""
  socialLinks = [
     { icon: 'bi-geo-alt-fill', text: 'Solapur, Inida', link: null },
     { icon: 'bi-envelope-fill', text: 'saquib@gmail.com', link: 'mailto:saquibkudle08@gmail.com' },
