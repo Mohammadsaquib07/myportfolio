@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  public isLoggedIn:boolean = false
  socialLinks = [
     { icon: 'bi-geo-alt-fill', text: 'Solapur, Inida', link: null },
     { icon: 'bi-envelope-fill', text: 'saquib@gmail.com', link: 'mailto:saquibkudle08@gmail.com' },
