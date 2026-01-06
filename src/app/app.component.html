@@ -1,37 +1,48 @@
-<app-navbar></app-navbar>
-<section id="home">
-  <ngx-particles
-    id="tsparticles-background"
-    [options]="particlesOptions"
-    [particlesInit]="particlesInit">
-  </ngx-particles>
-
-  <div class="hero-section">
-    <div class="hero-content">
-      <h1>Hi, I’m <span class="highlight">Mohammad Saquib</span></h1>
-      <p class="lead">Software Engineer | .NET Developer | Full Stack</p>
-      <p class="description">
-        Passionate developer with expertise in building scalable .NET applications,
-        implementing modern architectural patterns, and delivering high-quality solutions.
-      </p>
-      <div class="hero-actions">
-        <button class="matrix-btn">View My CV</button>
-        <button class="matrix-btn">Contact Me</button>
-      </div>
-    </div>
+<div class="main-container">
+  <div class="navbar-container">
+    <app-navbar></app-navbar>
   </div>
-</section>
+  <div id="home">
+    <ngx-particles id="tsparticles-background" [options]="particlesOptions" [particlesInit]="particlesInit">
+    </ngx-particles>
+   <div class="hero-section d-flex align-items-center justify-content-center text-center">
+  <div class="hero-content container">
+    
+    <h1 class="hero-title">
+      Hi, I'm <span class="highlight-blue">Mohammad Saquib</span>
+    </h1>
+    
+    <p class="hero-subtitle">
+      Software Engineer | .NET Developer | Full Stack
+    </p>
+    
+    <p class="hero-description mx-auto">
+      Passionate developer with expertise in building scalable .NET applications, implementing 
+      modern architectural patterns, and delivering high-quality solutions through research-driven 
+      problem-solving and continuous learning.
+    </p>
+    
+    <div class="hero-actions d-flex justify-content-center gap-3 mt-4">
+      <button class="btn-cv">View My CV</button>
+      <button class="btn-contact">Contact Me</button>
+    </div>
 
-<section id="about">
-  <app-about></app-about>
-</section>
-<section id="skills">
-  <app-skills></app-skills>
-</section>
-<section id="projects">
-  <app-projects></app-projects>
-</section>
-<section id="contact">
-  <app-contact></app-contact>
-</section>
-
+    <div class="hero-socials mt-4">
+      <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+    </div>
+    
+  </div>
+</div>
+    <section id="about" class="section section-about">
+      <span class="aboutpage">
+        <app-about></app-about>
+      </span>
+    </section>
+    <section id="skills" class="section section-skills">
+      <span class="skillPage">
+        <app-skills></app-skills>
+      </span>
+    </section>
+  </div>
+</div>

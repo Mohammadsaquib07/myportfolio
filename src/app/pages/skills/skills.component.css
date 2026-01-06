@@ -1,0 +1,72 @@
+.skill-section{
+position: relative;
+   padding: 80px 0;
+}
+
+/* Section Background */
+.skills-section {
+  background-color: #0b1120; /* Darker navy */
+  color: #ffffff;
+}
+
+/* The Glowing Card */
+.skill-card {
+  position: relative;
+  background: rgba(15, 23, 42, 0.6); /* Translucent dark blue */
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(59, 130, 246, 0.2); /* Subtle base border */
+  overflow: hidden;
+}
+
+/* The Animated/Partial Blue Glow Border */
+.skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px; /* Border thickness */
+  background: linear-gradient(135deg, #3b82f6 0%, transparent 40%, transparent 60%, #3b82f6 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Icon Box Styling */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+  font-size: 1.5rem;
+}
+
+.skill-category-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* Skill Tags */
+.skill-tag {
+  background: rgba(30, 41, 59, 0.8);
+  color: #60a5fa; /* Light blue text */
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(59, 130, 246, 0.2);
+  color: #ffffff;
+  transform: translateY(-2px);
+}

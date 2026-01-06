@@ -1,35 +1,22 @@
-html {
-  scroll-behavior: smooth;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Particles */
-#tsparticles-background {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+/* SCROLL WRAPPER */
+.scroll-wrapper {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-#tsparticles-background canvas {
-  pointer-events: none;
-}
-
-/* Hero */
-#home {
+/* BASE SECTION */
+.section {
   position: relative;
+  width: 100%;
   min-height: 100vh;
-}
-
-.hero-section {
-  min-height: 100vh;
+  padding: 120px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-/* Sections below */
-section:not(#home) {
-  padding: 120px 20px;
-  background: #fff; /* or dark if you want continuity */
 }

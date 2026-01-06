@@ -15,12 +15,12 @@ import { AppComponent } from '../../app.component';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  constructor(private app: AppComponent) {}
+constructor(private app: AppComponent) {}
+
 scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({
     behavior: 'smooth',
     block: 'start'
   });
 }
-
 } 
